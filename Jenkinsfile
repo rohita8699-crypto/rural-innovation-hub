@@ -5,6 +5,7 @@ pipeline {
     APP_NAME = 'rural-innovation-hub'
     IMAGE_NAME = 'rural-innovation-hub:latest'
     TEST_PORT = '3100'
+    PATH = "C:\\Program Files\\nodejs;C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
   }
 
   stages {
@@ -16,14 +17,14 @@ pipeline {
 
     stage('Install Dependencies') {
       steps {
-        bat 'npm install'
+        bat 'npm.cmd install'
       }
     }
 
     stage('Code and Project Checks') {
       steps {
-        bat 'npm run lint'
-        bat 'npm test'
+        bat 'npm.cmd run lint'
+        bat 'npm.cmd test'
       }
     }
 
