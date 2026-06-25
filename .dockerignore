@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+pnpm-lock.yaml
+.git
+.gitignore
+README.md
+Jenkinsfile
+screenshots
+coverage
+*.pptx

@@ -1,0 +1,81 @@
+{
+  "users": [
+    {
+      "id": "admin-001",
+      "name": "Platform Admin",
+      "email": "admin@ruralhub.test",
+      "passwordHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "role": "admin",
+      "region": "National",
+      "bio": "Reviews rural innovation submissions and keeps the knowledge base useful.",
+      "createdAt": "2026-06-25T00:00:00.000Z"
+    },
+    {
+      "id": "d3365dc1-dd53-4be0-858f-b9b9d88fb214",
+      "name": "Rohitha",
+      "email": "rohita8699@gmail.com",
+      "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+      "role": "innovator",
+      "region": "Andhra Pradesh",
+      "bio": "",
+      "createdAt": "2026-06-25T04:37:53.868Z"
+    }
+  ],
+  "innovations": [
+    {
+      "id": "inv-001",
+      "title": "Pedal Powered Water Pump",
+      "description": "A low-cost bicycle mechanism that pumps irrigation water without electricity.",
+      "sector": "Agriculture",
+      "region": "Telangana",
+      "cost": 2500,
+      "tags": [
+        "irrigation",
+        "low-cost",
+        "manual"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=900&q=80",
+      "documentUrl": "",
+      "authorId": "admin-001",
+      "authorName": "Platform Admin",
+      "status": "approved",
+      "views": 19,
+      "ratingSum": 20,
+      "ratingCount": 5,
+      "comments": [
+        {
+          "id": "com-001",
+          "user": "Research Student",
+          "message": "This can be adapted for small vegetable farms.",
+          "createdAt": "2026-06-25T00:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-06-25T00:00:00.000Z",
+      "updatedAt": "2026-06-25T00:00:00.000Z"
+    },
+    {
+      "id": "inv-002",
+      "title": "Clay Pot Cold Storage",
+      "description": "A zero-electricity evaporative cooling box for preserving vegetables and dairy.",
+      "sector": "Food Storage",
+      "region": "Andhra Pradesh",
+      "cost": 1200,
+      "tags": [
+        "storage",
+        "sustainable",
+        "farmers"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?auto=format&fit=crop&w=900&q=80",
+      "documentUrl": "",
+      "authorId": "admin-001",
+      "authorName": "Platform Admin",
+      "status": "approved",
+      "views": 11,
+      "ratingSum": 13,
+      "ratingCount": 3,
+      "comments": [],
+      "createdAt": "2026-06-25T00:00:00.000Z",
+      "updatedAt": "2026-06-25T00:00:00.000Z"
+    }
+  ]
+}

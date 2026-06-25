@@ -1,0 +1,23 @@
+{
+  "name": "rural-innovation-hub",
+  "version": "1.0.0",
+  "description": "Web platform for showcasing and sharing rural low-cost innovations.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "lint": "node --check server.js",
+    "test": "node scripts/check-project.js"
+  },
+  "keywords": [
+    "rural-innovation",
+    "devops",
+    "node",
+    "express"
+  ],
+  "author": "Team 10",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
