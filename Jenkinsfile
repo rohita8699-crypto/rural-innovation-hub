@@ -37,7 +37,7 @@ pipeline {
       steps {
         bat 'docker rm -f %APP_NAME%-test || exit /b 0'
         bat 'docker run -d --name %APP_NAME%-test -p %TEST_PORT%:3000 %IMAGE_NAME%'
-        bat 'powershell -Command "Start-Sleep -Seconds 5; $response = Invoke-RestMethod http://localhost:%TEST_PORT%/api/health; if ($response.status -ne ''ok'') { exit 1 }"'
+        bat '''powershell -Command "Start-Sleep -Seconds 5; $response = Invoke-RestMethod http://localhost:%TEST_PORT%/api/health; if ($response.status -ne 'ok') { exit 1 }"'''
       }
       post {
         always {
